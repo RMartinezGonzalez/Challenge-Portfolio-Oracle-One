@@ -522,6 +522,43 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.arrow {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.svg {
+  fill: hsl(166, 82%, 28%);
+}
+
+.svg-cube {
+  stroke: hsl(166, 82%, 28%);
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }

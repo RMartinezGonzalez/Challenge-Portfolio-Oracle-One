@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
 
 @layer components {
-  .component {
-    @apply
+  .arrow {
+    @apply w-6 h-6
+  }
+  .svg {
+    @apply fill-clr-primary-500
+  }
+  .svg-cube {
+    @apply stroke-clr-primary-500
   }
 }
