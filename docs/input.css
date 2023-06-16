@@ -11,8 +11,11 @@ body {
 }
 
 @layer components {
+  .title {
+    @apply font-bold text-2xl
+  }
   .arrow {
-    @apply w-6 h-6
+    @apply w-3 h-3 stroke-2
   }
   .svg {
     @apply fill-clr-primary-500
@@ -20,4 +23,29 @@ body {
   .svg-cube {
     @apply stroke-clr-primary-500
   }
+  .grid-skills {
+    @apply grid grid-cols-2 gap-y-8 gap-x-4
+  }
+  .grid-item-hobbie {
+    @apply grid justify-center justify-items-center text-center bg-clr-neutral-100 rounded
+  }
+  .name-transition {
+    @apply relative font-bold text-clr-primary-500 cursor-default after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-primary-500 after:scale-x-0 after:transition-all hover:after:scale-x-100
+  }
+  .button {
+    @apply py-3 px-4 w-fit font-semibold text-sm border border-clr-primary-500 rounded
+  }
+  .input {
+    @apply h-14 w-full px-3 pt-5 text-clr-neutral-900 font-normal text-base border-b-2 rounded outline-none focus:border-b-clr-primary-500 valid:border-b-clr-primary-500
+  }
+  .input-span {
+    @apply absolute left-3 top-4 text-clr-neutral-700 font-normal text-base pointer-events-none transition-all peer-focus:text-clr-primary-500 peer-focus:text-xs peer-focus:translate-y-[-8px] peer-valid:text-clr-primary-500 peer-valid:text-xs peer-valid:translate-y-[-8px]
+  }
+  .input-email:not(:placeholder-shown) ~ .input-span {
+    @apply text-clr-primary-500 text-xs translate-y-[-8px]
+  }
+  .input-email:not(:placeholder-shown) ~ .input {
+    @apply border-b-clr-primary-500
+  }
+
 }
