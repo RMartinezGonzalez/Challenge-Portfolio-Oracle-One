@@ -24,10 +24,10 @@ body {
     @apply stroke-clr-primary-400
   }
   .grid-skills {
-    @apply grid grid-cols-2 gap-y-8 gap-x-4 md:grid-cols-3 xl:grid-cols-6
+    @apply flex flex-wrap justify-center gap-y-8 gap-x-4
   }
   .grid-item-hobbie {
-    @apply grid justify-items-center text-center bg-clr-neutral-100 rounded transition-all hover:-translate-y-2 hover:shadow-md pb-2 xl:h-[174px] items-center bg-gradient-to-r from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 text-clr-primary-400
+    @apply w-full max-w-[144px] md:max-w-[250px] xl:max-w-[300px] grid justify-items-center text-center bg-clr-neutral-100 rounded transition-all hover:-translate-y-2 hover:shadow-md pb-2 xl:h-[174px] items-center bg-gradient-to-r from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 text-clr-primary-400
   }
   .name-transition {
     @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-neutral-900 after:scale-x-0 after:transition-all hover:after:scale-x-100 text-clr-neutral-900
