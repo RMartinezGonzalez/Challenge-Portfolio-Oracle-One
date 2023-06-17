@@ -24,16 +24,16 @@ body {
     @apply stroke-clr-primary-500
   }
   .grid-skills {
-    @apply grid grid-cols-2 gap-y-8 gap-x-4
+    @apply grid grid-cols-2 gap-y-8 gap-x-4 md:grid-cols-3
   }
   .grid-item-hobbie {
-    @apply grid justify-center justify-items-center text-center bg-clr-neutral-100 rounded
+    @apply grid justify-items-center text-center bg-clr-neutral-100 rounded transition-all hover:-translate-y-2 hover:shadow-md pb-2
   }
   .name-transition {
-    @apply relative font-bold text-clr-primary-500 cursor-default after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-primary-500 after:scale-x-0 after:transition-all hover:after:scale-x-100
+    @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-neutral-900 after:scale-x-0 after:transition-all hover:after:scale-x-100 text-clr-neutral-900
   }
   .button {
-    @apply py-3 px-4 w-fit font-semibold text-sm border border-clr-primary-500 rounded
+    @apply py-3 px-4 w-fit font-semibold text-sm border border-clr-primary-500 rounded transition-all hover:scale-105
   }
   .input {
     @apply h-14 w-full px-3 pt-5 text-clr-neutral-900 font-normal text-base border-b-2 rounded outline-none focus:border-b-clr-primary-500 valid:border-b-clr-primary-500

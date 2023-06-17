@@ -15,7 +15,7 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="shadow-md z-10 flex fixed w-full justify-between items-center py-5 px-4 bg-gradient-to-l from-clr-neutral-200 via-clr-neutral-400 bg-clr-neutral-400">
+  <header class="shadow-md z-10 flex fixed w-full justify-between items-center py-5 px-4 md:px-8 xl:py-8 xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400">
     <!-- Logo -->
     <div class="flex gap-2 items-center">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -25,45 +25,46 @@
     </div>
 
     <!-- Navegation -->
-    <nav class="flex font-normal text-sm">
-      <a class="hidden" href="#sobre-mi">Sobre mi</a>
-      <a class="hidden" href="#skills">Skills</a>
-      <a class="hidden" href="#hobbies">Hobbies</a>
-      <a class="hidden" href="#formacion">Formación</a>
-      <a class="hidden" href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="flex font-normal text-sm gap-8 md:font-medium md:text-base">
+      <a class="name-transition hidden xl:block" href="#sobre-mi">Sobre mi</a>
+      <a class="name-transition hidden xl:block" href="#skills">Skills</a>
+      <a class="name-transition hidden xl:block" href="#hobbies">Hobbies</a>
+      <a class="name-transition hidden xl:block" href="#formacion">Formación</a>
+      <a class="name-transition hidden xl:block" href="#proyectos">Proyectos</a>
+      <a class="name-transition md:font-bold" href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
     <!-- Hero -->
-    <section class="p-4 pt-20 bg-gradient-to-l from-clr-neutral-200 via-clr-neutral-400 bg-clr-neutral-400">
-      <img class="rounded-full h-[98px] w-[98px] aspect-square mb-4" src="../assets/perfil.png" alt="imagen de perfil">
-      <div class="grid gap-4">
-        <h2 class="title">Hola. mi nombre es Ricardo y construyo paginas web</h2>
-        <p class="font-normal text-sm">
+    <div class="h-[64px] w-full"></div>
+    <section class="p-4 md:p-8 bg-gradient-to-l from-clr-neutral-200  to-clr-neutral-400 md:flex md:gap-8 md:items-center md:justify-center">
+      <img class="rounded-full h-[98px] w-[98px] aspect-square mb-4 md:order-1 md:h-[146px] md:w-[146px]" src="../assets/perfil.png" alt="imagen de perfil">
+      <div class="grid gap-4 md:gap-2">
+        <h2 class="title md:max-w-[524px]">Hola. mi nombre es Ricardo y construyo paginas web</h2>
+        <p class="font-normal text-sm md:text-base md:max-w-[524px]">
           Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.
         </p>
-        <div class="flex justify-between">
-          <a class="name-transition flex font-semibold text-sm items-center gap-0.5" href="https://github.com/RMartinezGonzalez" target="_blank">
+        <div class="flex justify-between max-w-[400px] md:justify-start md:gap-8">
+          <a class="name-transition flex font-semibold text-sm items-center gap-0.5 md:font-medium md:text-base" href="https://github.com/RMartinezGonzalez" target="_blank">
             Github
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
             </svg>         
           </a>
-          <a class="name-transition flex font-semibold text-sm items-center gap-0.5" href="https://www.linkedin.com/in/ricardo-martinez-gonzalez/" target="_blank">
+          <a class="name-transition flex font-semibold text-sm items-center gap-0.5 md:font-medium md:text-base" href="https://www.linkedin.com/in/ricardo-martinez-gonzalez/" target="_blank">
             Linkedin
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
             </svg>         
           </a>
-          <a class="name-transition flex font-semibold text-sm items-center gap-0.5" href="https://www.instagram.com/" target="_blank">
+          <a class="name-transition flex font-semibold text-sm items-center gap-0.5 md:font-medium md:text-base" href="https://www.instagram.com/" target="_blank">
             Instagram
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-            </svg>         
+            </svg>
           </a>
-          <a class="name-transition flex font-semibold text-sm items-center gap-0.5" href="#" target="_blank">
+          <a class="name-transition flex font-semibold text-sm items-center gap-0.5 md:font-medium md:text-base" href="#" target="_blank">
             Currículo
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
@@ -74,20 +75,20 @@
     </section>
 
     <!-- About Me -->
-    <section id="sobre-mi" class="p-4 grid gap-4 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-16">
+    <section id="sobre-mi" class="p-4 grid gap-4 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-16 md:p-8 md:justify-center">
       <h3 class="title">Sobre mi</h3>
-      <p class="font-normal text-sm">
+      <p class="font-normal text-sm md:max-w-[704px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. <br><br>
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
-      </p class="font-normal text-sm">
+      </p>
       <img src="../assets/firma.svg" alt="mi firma">
     </section>
 
     <!-- Atributes -->
     <section>
       <!-- Skills -->
-      <section class="p-4 scroll-mt-16 bg-gradient-to-l from-clr-neutral-200 via-clr-neutral-400 bg-clr-neutral-400" id="skills">
+      <section class="p-4 scroll-mt-16 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="skills">
         <h3 class="text-center mb-8 title">Skills</h3>
         <div class="grid-skills">
           <!-- HTML -->
@@ -119,7 +120,7 @@
       </section>
 
       <!-- Hobbies -->
-      <section class="p-4 scroll-mt-16 bg-gradient-to-l from-clr-neutral-200 via-clr-neutral-400 bg-clr-neutral-400" id="hobbies">
+      <section class="p-4 scroll-mt-16 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="hobbies">
         <h3 class="text-center mb-8 title">Hobbies</h3>
         <div  class="grid-skills">
           <!-- Musica -->
@@ -153,17 +154,24 @@
     <!-- Education -->
     <section class="p-8 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-16" id="formacion">
       <h3 class="mb-8 text-center title">Formación académica</h3>
-      <div class="grid gap-4">
+      <div class="grid gap-4 md:grid-cols-3">
         <figure class="grid gap-2">
           <div class="bg-clr-primary-500 rounded">
-            <img class="mix-blend-color-burn object-contain w-full h-[118px] py-7" src="../assets/cobao.svg" alt="Colegio de Bachilleres del Estado de Oaxaca">
+            <img class="mix-blend-color-burn object-contain w-full h-[118px] py-7 transition-all hover:scale-110" src="../assets/cobao.svg" alt="Colegio de Bachilleres del Estado de Oaxaca">
           </div>
           <figcaption class="font-bold text-base">Educación Media Superios</figcaption>
           <small class="font-medium text-sm">2019 - COBAO</small>
         </figure>
         <figure class="grid gap-2">
+          <div class="bg-clr-primary-500 rounded grid justify-items-center">
+            <img class="mix-blend-color object-contain w-1/2 h-[118px] py-7 transition-all hover:scale-110" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2147839398/settings_images/27f5c58-62-fdb6-87f-aa61016e51b6_HMS6S10GQK6r4Q9lCruv_academia_logo_large.png" alt="Academia X">
+          </div>
+          <figcaption class="font-bold text-base">Ruta de Desarrollo Frontend</figcaption>
+          <small class="font-medium text-sm">2022 - Academia X</small>
+        </figure>
+        <figure class="grid gap-2">
           <div class="bg-clr-primary-500 rounded">
-            <img class="mix-blend-color-burn object-contain w-full h-[118px] py-7" src="../assets/alura.svg" alt="Alura, Oracle One">
+            <img class="mix-blend-color-burn object-contain w-full h-[118px] py-7 transition-all hover:scale-110" src="../assets/alura.svg" alt="Alura, Oracle One">
           </div>
           <figcaption class="font-bold text-base">Formación Desarrollador Web</figcaption>
           <small class="font-medium text-sm">2023 - Alura</small>
@@ -172,13 +180,13 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="p-8 scroll-mt-16 bg-gradient-to-l from-clr-neutral-200 via-clr-neutral-400 bg-clr-neutral-400" id="proyectos">
+    <section class="p-8 scroll-mt-16 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400" id="proyectos">
       <h3 class="title mb-4 text-center">Proyectos</h3>
       <!-- Items -->
       <div class="grid gap-16">
         <!-- Compu-Info -->
         <div>
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded" src="../assets/compu_info.jpg" alt="compu-info website">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80" src="../assets/compu_info.jpg" alt="compu-info website">
           <div class="grid gap-2">
             <h4 class="font-bold text-base">Compu-Info</h4>
             <p class="font-medium text-sm">Blog de información sobre computadoras</p>
@@ -191,7 +199,7 @@
 
         <!-- Challenge - Encriptador -->
         <div>
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded" src="../assets/encriptador.jpg" alt="challenge encriptador">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80" src="../assets/encriptador.jpg" alt="challenge encriptador">
           <div class="grid gap-2">
             <h4 class="font-bold text-base">Encriptador de texto</h4>
             <p class="font-medium text-sm">Challenge Alura Codificafor</p>
@@ -204,7 +212,7 @@
 
         <!-- Challenge - Portafolio -->
         <div>
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded" src="../assets/portafolio.jpg" alt="challenge portafolio">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80" src="../assets/portafolio.jpg" alt="challenge portafolio">
           <div class="grid gap-2">
             <h4 class="font-bold text-base">Portafolio</h4>
             <p class="font-medium text-sm">Challenge Alura Portafolio</p>
@@ -250,8 +258,8 @@
     </section>
   </main>
 
-  <footer class="py-8 grid place-items-center bg-gradient-to-l from-clr-neutral-200 via-clr-neutral-400 bg-clr-neutral-400">
-    <small class="font-medium text-center">Desarrollado por <span class="name-transition">Ricardo Martínez González</span><br>2023</small>
+  <footer class="py-8 grid place-items-center bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400">
+    <small class="font-medium text-center">Desarrollado por <span class="name-transition cursor-default font-bold">Ricardo Martínez González</span><br>2023</small>
   </footer>
 </body>
 </html>
