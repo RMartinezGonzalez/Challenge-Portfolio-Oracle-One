@@ -36,7 +36,7 @@ body {
     @apply py-3 px-4 w-fit font-semibold text-sm border border-clr-neutral-700 rounded transition-all hover:scale-105
   }
   .input {
-    @apply h-14 w-full px-3 pt-5 text-clr-neutral-900 font-normal text-base border-b-2 rounded outline-none focus:border-b-clr-primary-500 valid:border-b-clr-primary-500
+    @apply h-14 w-full px-3 pt-5 text-clr-neutral-900 font-normal text-base border-b-2 rounded outline-none focus:border-b-clr-primary-500 valid:border-b-clr-primary-500 placeholder:text-transparent
   }
   .input-span {
     @apply absolute left-3 top-4 text-clr-neutral-700 font-normal text-base pointer-events-none transition-all peer-focus:text-clr-primary-500 peer-focus:text-xs peer-focus:translate-y-[-8px] peer-valid:text-clr-primary-500 peer-valid:text-xs peer-valid:translate-y-[-8px]
@@ -46,8 +46,5 @@ body {
   }
   .input-email:not(:placeholder-shown) ~ .input {
     @apply border-b-clr-primary-500
-  }
-  .test {
-    color: hsl(166, 81%, 39%);
   }
 }

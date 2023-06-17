@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./public/perfil.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/perfil.webp" type="image/x-icon">
     <title>Portfolio Challenge</title>
+    <meta name="description" content="Challenge from ONE - Oracle Next Education, portfolio">
+    <!-- CSS and JS-->
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- CSS and JS-->
-    <link rel="stylesheet" href="./output.css">
-    <script src="./script.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -37,9 +38,9 @@
 
   <main>
     <!-- Hero -->
-    <div class="h-[64px] w-full xl:h-[88px]"></div>
+    <div class="h-[64px] w-full xl:h-[88px] bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400"></div>
     <section class="p-4 md:p-8 xl:px-36 bg-gradient-to-l from-clr-neutral-200  to-clr-neutral-400 md:flex md:gap-8 md:items-center md:justify-center xl:gap-4">
-      <img class="rounded-full h-[98px] w-[98px] aspect-square mb-4 md:order-1 md:h-[146px] md:w-[146px] xl:h-[367px] xl:w-[367px]" src="./public/perfil.png" alt="imagen de perfil">
+      <img class="rounded-full h-[98px] w-[98px] aspect-square mb-4 md:order-1 md:h-[146px] md:w-[146px] xl:h-[367px] xl:w-[367px]" src="./public/perfil.webp" alt="imagen de perfil">
       <div class="grid gap-4 md:gap-2 xl:gap-6">
         <h2 class="title md:max-w-[524px] xl:text-5xl xl:max-w-[751px]">Hola. mi nombre es Ricardo y construyo paginas web</h2>
         <p class="font-normal text-sm md:text-base md:max-w-[524px] xl:text-xl xl:max-w-[751px]">
@@ -82,11 +83,11 @@
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
       </p>
-      <img src="./public/firma.svg" alt="mi firma">
+      <img src="./public/firma.webp" alt="mi firma">
     </section>
 
     <!-- Atributes -->
-    <section>
+    <section">
       <!-- Skills -->
       <section class="p-4 scroll-mt-[88px] xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="skills">
         <h3 class="text-center mb-8 title">Skills</h3>
@@ -106,10 +107,15 @@
             <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: 0;transform: msFilter"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
             <figcaption class="font-bold text-base">JavaScript</figcaption>
           </figure>
-          <!-- Git/GitHub -->
+          <!-- Git -->
+          <figure class="grid-item-hobbie">
+            <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+            <figcaption class="font-bold text-base">Git</figcaption>
+          </figure>
+          <!-- GitHub -->
           <figure class="grid-item-hobbie">
             <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: 0;transform: msFilter"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
-            <figcaption class="font-bold text-base">Git y GitHub</figcaption>
+            <figcaption class="font-bold text-base">GitHub</figcaption>
           </figure>
           <!-- TailWindCSS -->
           <figure class="grid-item-hobbie">
@@ -117,10 +123,10 @@
             <figcaption class="font-bold text-base">TailWindCSS</figcaption>
           </figure>
           <!-- NPM -->
-          <figure class="grid-item-hobbie">
-            <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
+          <!-- <figure class="grid-item-hobbie">
+            <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
             <figcaption class="font-bold text-base">NPM</figcaption>
-          </figure>
+          </figure> -->
         </div>
       </section>
 
@@ -131,13 +137,11 @@
           <!-- Musica -->
           <figure class="grid-item-hobbie">
             <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: 0;transform: msFilter"><path d="M20 12v-1.707c0-4.442-3.479-8.161-7.755-8.29-2.204-.051-4.251.736-5.816 2.256A7.933 7.933 0 0 0 4 10v2c-1.103 0-2 .897-2 2v4c0 1.103.897 2 2 2h2V10a5.95 5.95 0 0 1 1.821-4.306 5.977 5.977 0 0 1 4.363-1.691C15.392 4.099 18 6.921 18 10.293V20h2c1.103 0 2-.897 2-2v-4c0-1.103-.897-2-2-2z"></path><path d="M7 12h2v8H7zm8 0h2v8h-2z"></path></svg>
-            <figcaption class="font-bold text-base">Oír música</figcaption>
+            <figcaption class="font-bold text-base">Escuchar música</figcaption>
           </figure>
           <!-- Series -->
           <figure class="grid-item-hobbie">
-            <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
-            </svg>
+            <svg class="svg w-24 h-24 stroke-clr-primary-400" width="800px" height="800px" viewBox="0 0 1024 1024" fill="" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="" stroke-width="28"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><path d="M70.4 772c-13.6 0-24-10.4-24-24V140.8c0-13.6 10.4-24 24-24h882.4c13.6 0 24 10.4 24 24v607.2c0 16-11.2 24-22.4 24H70.4z m24-44h836V166.4H94.4V728z" fill=""/><path d="M733.6 662.4c-13.6 0-24-10.4-24-24s10.4-24 24-24h93.6c13.6 0 24 10.4 24 24s-12.8 24-24 24H733.6zM512 884c-13.6 0-24-10.4-24-24V758.4c0-13.6 10.4-24 24-24s24 10.4 24 24v103.2c-0.8 12-11.2 22.4-24 22.4z" fill=""/><path d="M316 904.8c-13.6 0-24-10.4-24-24s10.4-24 24-24h392.8c13.6 0 24 10.4 24 24s-12.8 24-24 24H316z" fill=""/></g></svg>
             <figcaption class="font-bold text-base">Ver series</figcaption>
           </figure>
           <!-- Cubo de Rubik -->
@@ -151,6 +155,12 @@
           <figure class="grid-item-hobbie">
             <svg class="svg w-24 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: 0;transform: msFilter"><path d="M21 5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-8 2h2v2h-2V7zm0 4h2v2h-2v-2zM9 7h2v2H9V7zm0 4h2v2H9v-2zM5 7h2v2H5V7zm0 4h2v2H5v-2zm12 6H7v-2h10v2zm2-4h-2v-2h2v2zm0-4h-2V7h2v2z"></path></svg>
             <figcaption class="font-bold text-base">Jugar Videojuegos</figcaption>
+          </figure>
+          <!-- Programar -->
+          <figure class="grid-item-hobbie">
+            <!-- <svg class="svg w-24 h-24 stroke-clr-primary-400" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3.2 -3.2 38.40 38.40" xml:space="preserve" fill="" stroke="" stroke-width="0.44800000000000006"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .feather_een{fill:0;} </style> <path class="feather_een" d="M8.5,10h-2C6.224,10,6,9.776,6,9.5v0C6,9.224,6.224,9,6.5,9h2C8.776,9,9,9.224,9,9.5v0 C9,9.776,8.776,10,8.5,10z M7,11.5L7,11.5C7,11.776,7.224,12,7.5,12h2c0.276,0,0.5-0.224,0.5-0.5v0c0-0.276-0.224-0.5-0.5-0.5h-2 C7.224,11,7,11.224,7,11.5z M7.5,18h2c0.276,0,0.5-0.224,0.5-0.5l0,0c0-0.276-0.224-0.5-0.5-0.5h-2C7.224,17,7,17.224,7,17.5l0,0 C7,17.776,7.224,18,7.5,18z M6.5,20h2C8.776,20,9,19.776,9,19.5l0,0C9,19.224,8.776,19,8.5,19h-2C6.224,19,6,19.224,6,19.5l0,0 C6,19.776,6.224,20,6.5,20z M22,13.5L22,13.5c0,0.276-0.224,0.5-0.5,0.5h-13C8.224,14,8,13.776,8,13.5v0C8,13.224,8.224,13,8.5,13 h13C21.776,13,22,13.224,22,13.5z M8.5,16h13c0.276,0,0.5-0.224,0.5-0.5v0c0-0.276-0.224-0.5-0.5-0.5h-13C8.224,15,8,15.224,8,15.5 v0C8,15.776,8.224,16,8.5,16z M16.5,12h-5c-0.276,0-0.5-0.224-0.5-0.5v0c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5v0 C17,11.776,16.776,12,16.5,12z M20.5,9h-10C10.224,9,10,9.224,10,9.5v0c0,0.276,0.224,0.5,0.5,0.5h10c0.276,0,0.5-0.224,0.5-0.5v0 C21,9.224,20.776,9,20.5,9z M29,4H3C1.343,4,0,5.343,0,7v16c0,1.657,1.343,3,3,3h9v3h-1.5c-0.276,0-0.5,0.224-0.5,0.5l0,0 c0,0.276,0.224,0.5,0.5,0.5h11c0.276,0,0.5-0.224,0.5-0.5l0,0c0-0.276-0.224-0.5-0.5-0.5H20v-3h9c1.657,0,3-1.343,3-3V7 C32,5.343,30.657,4,29,4z M19,29h-6v-3h6V29z M31,23c0,1.105-0.895,2-2,2H3c-1.105,0-2-0.895-2-2V7c0-1.105,0.895-2,2-2h26 c1.105,0,2,0.895,2,2V23z"></path> </g></svg> -->
+            <svg class="svg w-24 h-24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>computer-code</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> <rect width="48" height="48" fill="none"></rect> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <g> <path d="M7,34H41a2,2,0,0,0,2-2V8a2,2,0,0,0-2-2H7A2,2,0,0,0,5,8V32A2,2,0,0,0,7,34ZM39,10V30H9V10"></path> <path d="M44,38H4a2,2,0,0,0,0,4H44a2,2,0,0,0,0-4Z"></path> <path d="M29.5,12.6a2.1,2.1,0,0,0-2.7-.2,1.9,1.9,0,0,0-.2,3L31.2,20l-4.6,4.6a1.9,1.9,0,0,0,.2,3,2.1,2.1,0,0,0,2.7-.2l5.9-6a1.9,1.9,0,0,0,0-2.8Z"></path> <path d="M21.2,12.4a2.1,2.1,0,0,0-2.7.2l-5.9,6a1.9,1.9,0,0,0,0,2.8l5.9,6a2.1,2.1,0,0,0,2.7.2,1.9,1.9,0,0,0,.2-3L16.8,20l4.6-4.6A1.9,1.9,0,0,0,21.2,12.4Z"></path> </g> </g> </g> </g></svg>
+            <figcaption class="font-bold text-base">Programar</figcaption>
           </figure>
         </div>
       </section>
@@ -169,7 +179,7 @@
         </figure>
         <figure class="grid gap-2">
           <div class="bg-clr-primary-500 rounded grid justify-items-center">
-            <img class="mix-blend-color object-contain w-1/2 xl:w-full h-[118px] xl:h-[286px] py-7 transition-all hover:scale-110" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2147839398/settings_images/27f5c58-62-fdb6-87f-aa61016e51b6_HMS6S10GQK6r4Q9lCruv_academia_logo_large.png" alt="Academia X">
+            <img class="mix-blend-color object-contain w-1/2 xl:w-full h-[118px] xl:h-[286px] py-7 transition-all hover:scale-110" src="./public/academiax.webp" alt="Academia X">
           </div>
           <figcaption class="font-bold text-base xl:text-xl">Ruta de Desarrollo Frontend</figcaption>
           <small class="font-medium text-sm xl:text-base">2022 - Academia X</small>
@@ -191,7 +201,7 @@
       <div class="grid gap-16 2xl:justify-center">
         <!-- Compu-Info -->
         <div class="xl:flex xl:items-center xl:gap-4">
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/compu_info.jpg" alt="compu-info website">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/compu_info.webp" alt="compu-info website">
           <div class="grid gap-2">
             <h4 class="font-bold text-base xl:text-xl">Compu-Info</h4>
             <p class="font-medium text-sm xl:text-base">Blog de información sobre computadoras</p>
@@ -204,7 +214,7 @@
 
         <!-- Challenge - Encriptador -->
         <div class="xl:flex xl:items-center xl:gap-4 xl:flex-row-reverse xl:justify-between">
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/encriptador.jpg" alt="challenge encriptador">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/encriptador.webp" alt="challenge encriptador">
           <div class="grid gap-2">
             <h4 class="font-bold text-base xl:text-xl">Encriptador de texto</h4>
             <p class="font-medium text-sm xl:text-base">Challenge Alura Codificafor</p>
@@ -217,7 +227,7 @@
 
         <!-- Challenge - Portafolio -->
         <div class="xl:flex xl:items-center xl:gap-4">
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/portafolio.jpg" alt="challenge portafolio">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/portafolio.webp" alt="challenge portafolio">
           <div class="grid gap-2">
             <h4 class="font-bold text-base xl:text-xl">Portafolio</h4>
             <p class="font-medium text-sm xl:text-base">Challenge Alura Portafolio</p>
@@ -232,7 +242,7 @@
 
     <!-- Contacto -->
     <section class="p-8 bg-gradient-to-r xl:px-36 xl:pt-[130px] xl:pb-[65px] xl:flex xl:gap-4 xl:justify-center from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[88px]" id="contacto">
-      <img class="hidden xl:block" src="./public/contacto.jpg" alt="imagen de un telefono para la sección de contacto">
+      <img class="hidden xl:block rounded-l" src="./public/contacto.webp" alt="imagen de un telefono para la sección de contacto">
       <div>
         <h3 class="title mb-2">Contacto</h3>
         <p class="font-medium text-base mb-8">
@@ -242,19 +252,19 @@
         </p>
         <form class="grid gap-8" action="">
           <div class="relative">
-            <input class="input peer" type="text" name="nombre" placeholder="" required>
+            <input class="input peer" type="text" name="nombre" placeholder="Nombre" required>
             <label class="input-span">Nombre</label>
           </div>
           <div class="relative">
-            <input class="input peer input-email" type="email" name="email" placeholder=" " required>
+            <input class="input peer input-email" type="email" name="email" placeholder="E-mail" required>
             <label class="input-span">E-mail</label>
           </div>
           <div class="relative">
-            <input class="input peer" type="text" name="asunto" placeholder="" required>
+            <input class="input peer" type="text" name="asunto" placeholder="Asunto" required>
             <label class="input-span peer">Asunto</label>
           </div>
           <div class="relative">
-            <textarea class="input peer h-[133px] resize-none pt-6 group:" name="mensaje" cols="30" rows="10" placeholder="" required></textarea>
+            <textarea class="input peer h-[133px] resize-none pt-6 group:" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
             <label class="input-span">Mensaje</label>
           </div>
           <button class="button bg-clr-primary-500 text-clr-neutral-100" type="submit">Enviar mensaje</button>
