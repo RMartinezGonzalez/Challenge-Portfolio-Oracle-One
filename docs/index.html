@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="relative">
   <!-- Header -->
   <header class="shadow-md z-10 flex fixed w-full justify-between items-center py-5 px-4 md:px-8 xl:py-8 xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400">
     <!-- Logo -->
@@ -28,7 +28,7 @@
     <!-- Navegation -->
     <nav class="flex font-normal text-sm gap-8 md:font-medium md:text-base">
       <a class="name-transition hidden xl:block" href="#sobre-mi">Sobre mi</a>
-      <a class="name-transition hidden xl:block" href="#skills">Skills</a>
+      <a class="name-transition hidden xl:block" href="#skills">Tecnologías</a>
       <a class="name-transition hidden xl:block" href="#hobbies">Hobbies</a>
       <a class="name-transition hidden xl:block" href="#formacion">Formación</a>
       <a class="name-transition hidden xl:block" href="#proyectos">Proyectos</a>
@@ -171,22 +171,22 @@
       <h3 class="mb-8 text-center title">Formación académica</h3>
       <div class="grid gap-4 md:grid-cols-3 max-w-[1880px] justify-self-center">
         <figure class="grid gap-2">
-          <div class="bg-clr-primary-500 rounded bg-gradient-to-br from-clr-primary-400 via-clr-primary-400 to-clr-neutral-400 transition-all hover:-translate-y-2">
-            <img class="mix-blend-color-burn object-contain w-full h-[118px] xl:h-[286px] py-7 transition-all" src="./public/cobao.svg" alt="Colegio de Bachilleres del Estado de Oaxaca">
+          <div class="bg-clr-primary-500 rounded bg-gradient-to-br from-clr-primary-400 via-clr-primary-400 to-clr-neutral-400">
+            <img class="mix-blend-color-burn object-contain w-full h-[118px] xl:h-[286px] py-7 transition-all hover:scale-110" src="./public/cobao.svg" alt="Colegio de Bachilleres del Estado de Oaxaca">
           </div>
           <figcaption class="font-bold text-base xl:text-xl">Educación Media Superios</figcaption>
           <small class="font-medium text-sm xl:text-base">2019 - COBAO</small>
         </figure>
         <figure class="grid gap-2">
-          <div class="bg-clr-primary-500 rounded grid justify-items-center bg-gradient-to-br from-clr-primary-400 via-clr-primary-400 to-clr-neutral-400 transition-all hover:-translate-y-2">
-            <img class="mix-blend-color object-contain w-1/2 xl:w-full h-[118px] xl:h-[286px] py-7 transition-all" src="./public/academiax.webp" alt="Academia X">
+          <div class="bg-clr-primary-500 rounded grid justify-items-center bg-gradient-to-br from-clr-primary-400 via-clr-primary-400 to-clr-neutral-400">
+            <img class="mix-blend-color object-contain w-1/2 xl:w-full h-[118px] xl:h-[286px] py-7 transition-all hover:scale-110" src="./public/academiax.webp" alt="Academia X">
           </div>
           <figcaption class="font-bold text-base xl:text-xl">Ruta de Desarrollo Frontend</figcaption>
           <small class="font-medium text-sm xl:text-base">2022 - Academia X</small>
         </figure>
         <figure class="grid gap-2">
-          <div class="bg-clr-primary-500 rounded grid justify-items-center bg-gradient-to-br from-clr-primary-400 via-clr-primary-400 to-clr-neutral-400 transition-all hover:-translate-y-2">
-            <img class="mix-blend-color-burn object-contain w-full xl:w-10/12 h-[118px] xl:h-[286px] py-7 transition-all" src="./public/alura.svg" alt="Alura, Oracle One">
+          <div class="bg-clr-primary-500 rounded grid justify-items-center bg-gradient-to-br from-clr-primary-400 via-clr-primary-400 to-clr-neutral-400">
+            <img class="mix-blend-color-burn object-contain w-full xl:w-10/12 h-[118px] xl:h-[286px] py-7 transition-all hover:scale-110" src="./public/alura.svg" alt="Alura, Oracle One">
           </div>
           <figcaption class="font-bold text-base xl:text-xl">Formación Desarrollador Web</figcaption>
           <small class="font-medium text-sm xl:text-base">2023 - Alura</small>
@@ -201,7 +201,7 @@
       <div class="grid gap-16 2xl:justify-center">
         <!-- Compu-Info -->
         <div class="xl:flex xl:items-center xl:gap-4">
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/compu_info.webp" alt="compu-info website">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px] grayscale transition-all hover:grayscale-0 focus:grayscale-0" src="./public/compu_info.webp" alt="compu-info website" tabindex="0">
           <div class="grid gap-2">
             <h4 class="font-bold text-base xl:text-xl">Compu-Info</h4>
             <p class="font-medium text-sm xl:text-base">Blog de información sobre computadoras</p>
@@ -214,7 +214,7 @@
 
         <!-- Challenge - Encriptador -->
         <div class="xl:flex xl:items-center xl:gap-4 xl:flex-row-reverse xl:justify-between">
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/encriptador.webp" alt="challenge encriptador">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px] grayscale transition-all hover:grayscale-0 focus:grayscale-0" src="./public/encriptador.webp" alt="challenge encriptador" tabindex="0">
           <div class="grid gap-2">
             <h4 class="font-bold text-base xl:text-xl">Encriptador de texto</h4>
             <p class="font-medium text-sm xl:text-base">Challenge Alura Codificafor</p>
@@ -227,7 +227,7 @@
 
         <!-- Challenge - Portafolio -->
         <div class="xl:flex xl:items-center xl:gap-4">
-          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px]" src="./public/portafolio.webp" alt="challenge portafolio">
+          <img class="mb-4 h-36 w-full object-contain bg-clr-neutral-700 rounded sm:h-80 md:h-[406px] xl:m-0 xl:max-w-[752px] grayscale transition-all hover:grayscale-0 focus:grayscale-0" src="./public/portafolio.webp" alt="challenge portafolio" tabindex="0">
           <div class="grid gap-2">
             <h4 class="font-bold text-base xl:text-xl">Portafolio</h4>
             <p class="font-medium text-sm xl:text-base">Challenge Alura Portafolio</p>
@@ -241,7 +241,7 @@
     </section>
 
     <!-- Contacto -->
-    <section class="p-8 bg-gradient-to-r xl:px-36 xl:pt-[130px] xl:pb-[65px] xl:flex xl:gap-4 xl:justify-center from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[88px]" id="contacto">
+    <section class="p-8 bg-gradient-to-r xl:px-36 xl:pt-[130px] xl:pb-[65px] xl:flex xl:gap-4 xl:justify-center from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[64px] xl:scroll-mt-[88px]" id="contacto">
       <img class="hidden xl:block rounded-l" src="./public/contacto.webp" alt="imagen de un telefono para la sección de contacto">
       <div>
         <h3 class="title mb-2">Contacto</h3>
@@ -250,24 +250,29 @@
           <br>
           Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
         </p>
-        <form class="grid gap-8" action="">
+        <form class="grid gap-8" action="https://formsubmit.co/ric.martinez.gonzalez@gmail.com" method="POST">
           <div class="relative">
-            <input class="input peer" type="text" name="nombre" placeholder="Nombre" required>
+            <input class="input peer" type="text" name="name" placeholder="Nombre" required maxlength="50" data-type="name">
             <label class="input-span">Nombre</label>
+            <span class="input-error-message"></span>
           </div>
           <div class="relative">
-            <input class="input peer input-email" type="email" name="email" placeholder="E-mail" required>
+            <input class="input peer input-email" type="email" name="email" placeholder="E-mail" required data-type="email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" title="ejemplo@mail.com">
             <label class="input-span">E-mail</label>
+            <span class="input-error-message"></span>
           </div>
           <div class="relative">
-            <input class="input peer" type="text" name="asunto" placeholder="Asunto" required>
+            <input class="input peer" type="text" name="subject" placeholder="Asunto" required maxlength="50" data-type="subject">
             <label class="input-span peer">Asunto</label>
+            <span class="input-error-message"></span>
           </div>
           <div class="relative">
-            <textarea class="input peer h-[133px] resize-none pt-6 group:" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-            <label class="input-span">Mensaje</label>
+            <div class="absolute top-0 rounded-tl w-[calc(100%-20px)] h-7 bg-clr-neutral-100"></div>
+            <textarea class="input peer h-[133px] resize-none pt-6" name="comments" placeholder="Mensaje" required maxlength="300" data-type="message"></textarea>
+            <label class="input-span z-10">Mensaje</label>
+            <span class="top-[132px] input-error-message"></span>
           </div>
-          <button class="button bg-clr-primary-500 text-clr-neutral-100" type="submit">Enviar mensaje</button>
+          <button class="button bg-clr-primary-500 text-clr-neutral-100 grayscale" type="submit" disabled>Enviar mensaje</button>
         </form>
       </div>
     </section>
@@ -276,5 +281,7 @@
   <footer class="py-8 grid place-items-center bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400">
     <small class="font-medium text-center">Desarrollado por <span class="name-transition cursor-default font-bold">Ricardo Martínez González</span><br>2023</small>
   </footer>
+
+  <dialog class="backdrop:bg-gradient-to-br backdrop:from-clr-neutral-500 backdrop:via-clr-neutral-500 backdrop:to-clr-neutral-400 text-clr-primary-400 backdrop:opacity-50" id="send-message">Correo Enviado! 📤</dialog>
 </body>
 </html>

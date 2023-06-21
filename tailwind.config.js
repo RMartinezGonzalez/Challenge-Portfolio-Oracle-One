@@ -17,7 +17,8 @@ module.exports = {
       'clr-neutral-500': 'hsl(0, 0%, 8%)', /* hsl */
       'clr-neutral-700': '#1a1a1a',
       'clr-neutral-900': '#000',
-      'transparent': 'transparent'
+      'transparent': 'transparent',
+      'clr-error': 'hsl(337, 42%, 54%)'
     },
     screens: {
       'sm': '640px',

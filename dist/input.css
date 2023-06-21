@@ -27,7 +27,7 @@ body {
     @apply flex flex-wrap justify-center gap-y-8 gap-x-4
   }
   .grid-item-hobbie {
-    @apply w-full max-w-[144px] md:max-w-[250px] xl:max-w-[300px] grid justify-items-center text-center rounded transition-all hover:-translate-y-2 hover:shadow-md pb-2 xl:h-[174px] items-center bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 text-clr-primary-400
+    @apply w-full max-w-[144px] md:max-w-[250px] xl:max-w-[300px] grid justify-items-center text-center rounded transition-all hover:-translate-y-3 hover:shadow-xl pb-2 xl:h-[174px] items-center bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 text-clr-primary-400
   }
   .name-transition {
     @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-neutral-900 after:scale-x-0 after:transition-all hover:after:scale-x-100 text-clr-neutral-900
@@ -46,5 +46,11 @@ body {
   }
   .input-email:not(:placeholder-shown) ~ .input {
     @apply border-b-clr-primary-500
+  }
+  .input-error {
+    @apply w-full
+  }
+  .input-error-message {
+    @apply absolute top-14 left-0 text-clr-error pointer-events-none
   }
 }
