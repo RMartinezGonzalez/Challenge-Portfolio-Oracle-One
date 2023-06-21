@@ -50,9 +50,9 @@ function showErrorMessage(inputType, input) {
   let message = '';
   errorTypes.forEach((error) => {
     if (input.validity[error]) {
-      console.log(inputType, error);
-      console.log(input.validity[error]);
-      console.log(errorMessages[inputType][error]);
+      // console.log(inputType, error);
+      // console.log(input.validity[error]);
+      // console.log(errorMessages[inputType][error]);
       message = errorMessages[inputType][error];
     }
   });
@@ -73,15 +73,15 @@ form.addEventListener('change', () => {
 
 
 button.addEventListener('click', () => {
-  event.preventDefault();
+  // event.preventDefault();
   const sendMessage = document.querySelector('#send-message');
-  form.reset();
   button.disabled = !form.checkValidity();
   button.classList.add('grayscale');
   sendMessage.showModal();
 
   setTimeout(() => {
     sendMessage.close();
+    form.reset();
   }, 2000); 
 
 })
