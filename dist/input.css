@@ -51,6 +51,6 @@ body {
     @apply w-full
   }
   .input-error-message {
-    @apply absolute top-14 left-0 text-clr-error pointer-events-none
+    @apply absolute top-[58px] xl:top-14 left-0 text-clr-error pointer-events-none font-medium text-sm xl:text-base
   }
 }

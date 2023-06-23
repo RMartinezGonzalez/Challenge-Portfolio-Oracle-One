@@ -36,7 +36,7 @@ const errorMessages = {
     email: {
       valueMissing: 'Ingrese su email',
       typeMismatch: 'El correo no es válido',
-      patternMismatch: 'Correo invalido, ejemplo: nombre@mail.com'
+      patternMismatch: 'Ejemplo: nombre@mail.com'
     },
     subject: {
       valueMissing: 'Ingrese su asunto',
