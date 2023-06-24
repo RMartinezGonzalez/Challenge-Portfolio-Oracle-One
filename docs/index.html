@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 </head>
 <body class="relative">
   <!-- Header -->
-  <header class="shadow-md z-10 flex fixed w-full justify-between items-center py-5 px-4 md:px-8 xl:py-8 xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400">
+  <header class="shadow-md z-10 flex fixed w-full justify-between items-center py-[17px] px-4 md:px-8 md:py-5 xl:py-8 xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400">
     <!-- Logo -->
     <a href="#" class="flex gap-2 items-center">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -26,14 +26,20 @@
     </a>
 
     <!-- Navegation -->
-    <nav class="flex font-normal text-sm gap-8 md:font-medium md:text-base">
-      <a class="name-transition hidden xl:block" href="#sobre-mi">Sobre mí</a>
-      <a class="name-transition hidden xl:block" href="#skills">Tecnologías</a>
-      <a class="name-transition hidden xl:block" href="#hobbies">Hobbies</a>
-      <a class="name-transition hidden xl:block" href="#formacion">Formación</a>
-      <a class="name-transition hidden xl:block" href="#proyectos">Proyectos</a>
-      <a class="name-transition md:font-bold" href="#contacto">Contacto</a>
+    <nav class="absolute top-0 left-0 h-screen w-full grid gap-8 z-10 justify-items-center content-center bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-400 to-clr-neutral-400 hidden md:h-auto md:w-auto md:from-transparent md:static md:flex md:gap-4 xl:gap-8 md:font-medium md:text-base">
+      <a class="name-transition p-4 font-bold md:font-medium md:p-0 text-clr-neutral-100 after:bg-clr-neutral-100 md:text-clr-neutral-900 md:after:bg-clr-neutral-900" href="#sobre-mi">Sobre mí</a>
+      <a class="name-transition p-4 font-bold md:font-medium md:p-0 text-clr-neutral-100 after:bg-clr-neutral-100 md:text-clr-neutral-900 md:after:bg-clr-neutral-900" href="#skills">Tecnologías</a>
+      <a class="name-transition p-4 font-bold md:font-medium md:p-0 text-clr-neutral-100 after:bg-clr-neutral-100 md:text-clr-neutral-900 md:after:bg-clr-neutral-900" href="#hobbies">Hobbies</a>
+      <a class="name-transition p-4 font-bold md:font-medium md:p-0 text-clr-neutral-100 after:bg-clr-neutral-100 md:text-clr-neutral-900 md:after:bg-clr-neutral-900" href="#formacion">Formación</a>
+      <a class="name-transition p-4 font-bold md:font-medium md:p-0 text-clr-neutral-100 after:bg-clr-neutral-100 md:text-clr-neutral-900 md:after:bg-clr-neutral-900" href="#proyectos">Proyectos</a>
+      <a class="name-transition p-4 font-bold md:p-0 text-clr-neutral-100 after:bg-clr-neutral-100 md:text-clr-neutral-900 md:after:bg-clr-neutral-900" href="#contacto">Contacto</a>
     </nav>
+
+    <button class="menu-button">
+      <span class="menu-icon"></span>
+      <span class="menu-icon"></span>
+      <span class="menu-icon"></span>
+    </button>
   </header>
 
   <main>
@@ -76,7 +82,7 @@
     </section>
 
     <!-- About Me -->
-    <section id="sobre-mi" class="p-4 grid gap-4 xl:py-16 xl:px-36 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[88px] md:p-8 md:justify-center ">
+    <section id="sobre-mi" class="p-4 grid gap-4 xl:py-16 xl:px-36 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[64px] xl:scroll-mt-[88px] md:p-8 md:justify-center ">
       <h3 class="title">Sobre mí</h3>
       <p class="font-normal text-sm md:max-w-[704px] xl:text-base xl:max-w-[1142px]">
         Estudiando desarrollo web frontend desde hace un año, gran entusiasmo por el conocimiento en general, así como mejorar mis prácticas, trabajo mis proyectos con seriedad y limpieza, sin dejar de lado mi estilo pragmático, facilidad de aprendizaje, ganas de experimentar y estar al día con la tecnología.<br><br>
@@ -88,7 +94,7 @@
     <!-- Atributes -->
     <section">
       <!-- Skills -->
-      <section class="p-4 scroll-mt-[88px] xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="skills">
+      <section class="p-4 scroll-mt-[64px] xl:scroll-mt-[88px] xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="skills">
         <h3 class="text-center mb-8 title">Tecnologías</h3>
         <div class="grid-skills">
           <!-- HTML -->
@@ -130,7 +136,7 @@
       </section>
 
       <!-- Hobbies -->
-      <section class="p-4 scroll-mt-[88px] xl:px-36 xl:pb-[88px] xl:pt-[56px] bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="hobbies">
+      <section class="p-4 scroll-mt-[64px] xl:scroll-mt-[88px] xl:px-36 xl:pb-[88px] xl:pt-[56px] bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400 md:p-8" id="hobbies">
         <h3 class="text-center mb-8 title">Hobbies</h3>
         <div  class="grid-skills">
           <!-- Musica -->
@@ -166,7 +172,7 @@
     </section>
 
     <!-- Education -->
-    <section class="grid p-8 xl:py-20 xl:px-36 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[88px]" id="formacion">
+    <section class="grid p-8 xl:py-20 xl:px-36 bg-gradient-to-r from-clr-neutral-500 to-clr-neutral-700 text-clr-neutral-100 scroll-mt-[64px] xl:scroll-mt-[88px]" id="formacion">
       <h3 class="mb-8 text-center title">Formación académica</h3>
       <div class="grid gap-4 md:grid-cols-3 max-w-[1880px] justify-self-center">
         <figure class="grid gap-2">
@@ -194,7 +200,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="p-8 scroll-mt-[88px] xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400" id="proyectos">
+    <section class="p-8 scroll-mt-[64px] xl:scroll-mt-[88px] xl:px-36 bg-gradient-to-l from-clr-neutral-200 to-clr-neutral-400" id="proyectos">
       <h3 class="title mb-4 text-center">Proyectos</h3>
       <!-- Items -->
       <div class="grid gap-16 2xl:justify-center">
@@ -251,12 +257,12 @@
         </p>
         <form class="grid gap-8" action="https://formsubmit.co/ric.martinez.gonzalez@gmail.com" method="POST">
           <div class="relative">
-            <input class="input peer" type="text" name="name" placeholder="Nombre" required maxlength="50" data-type="name">
+            <input class="input peer input-invalid" type="text" name="name" placeholder="Nombre" required maxlength="50" data-type="name" pattern="^[\p{L}\p{M}\p{Zs}]*$" title="Ingrese solamente letras">
             <label class="input-span">Nombre</label>
             <span class="input-error-message"></span>
           </div>
           <div class="relative">
-            <input class="input peer input-email" type="email" name="email" placeholder="E-mail" required data-type="email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" title="ejemplo@mail.com">
+            <input class="input peer input-invalid" type="email" name="email" placeholder="E-mail" required data-type="email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" title="ejemplo@mail.com">
             <label class="input-span">E-mail</label>
             <span class="input-error-message"></span>
           </div>
@@ -267,8 +273,8 @@
           </div>
           <div class="relative">
             <div class="absolute top-0 rounded-tl w-[calc(100%-20px)] h-7 bg-clr-neutral-100"></div>
-            <textarea class="input peer h-[133px] resize-none pt-6" name="comments" placeholder="Mensaje" required maxlength="300" data-type="message"></textarea>
-            <label class="input-span z-10">Mensaje</label>
+            <textarea class="input peer h-[133px] resize-none pt-6" type="text" name="Message" placeholder="Mensaje" required maxlength="300" data-type="message"></textarea>
+            <label class="input-span z-[1]">Mensaje</label>
             <span class="top-[135px] xl:top-[133px] input-error-message"></span>
           </div>
           <button class="button bg-clr-primary-500 text-clr-neutral-100 grayscale" type="submit" disabled>Enviar mensaje</button>

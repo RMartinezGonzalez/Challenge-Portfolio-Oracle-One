@@ -1,5 +1,5 @@
 const inputs = document.querySelectorAll('input, textarea');
-const button = document.querySelector('button');
+const buttonSend = document.querySelector('button[type="submit"]');
 const messages = document.querySelectorAll('.input-error-message');
 
 inputs.forEach(input => {
@@ -32,6 +32,7 @@ const errorTypes = [
 const errorMessages = {
     name: {
       valueMissing: 'Ingrese su nombre',
+      patternMismatch: 'Ingrese solamente letras'
     },
     email: {
       valueMissing: 'Ingrese su email',
@@ -63,20 +64,21 @@ function showErrorMessage(inputType, input) {
 
 const form = document.querySelector('form');
 form.addEventListener('change', () => {
-    button.disabled = !form.checkValidity();
-    if (!button.disabled) {
-      button.classList.remove('grayscale');
+    buttonSend.disabled = !form.checkValidity();
+    if (!buttonSend.disabled) {
+      buttonSend.classList.remove('grayscale');
+
     } else {
-      button.classList.add('grayscale');
+      buttonSend.classList.add('grayscale');
     }
 });
 
 
-button.addEventListener('click', () => {
+buttonSend.addEventListener('click', () => {
   // event.preventDefault();
   const sendMessage = document.querySelector('#send-message');
-  button.disabled = !form.checkValidity();
-  button.classList.add('grayscale');
+  buttonSend.disabled = !form.checkValidity();
+  buttonSend.classList.add('grayscale');
   sendMessage.showModal();
 
   setTimeout(() => {
@@ -85,3 +87,19 @@ button.addEventListener('click', () => {
   }, 2000); 
 
 })
+
+const menutoggle = document.querySelector('.menu-button');
+const navigation = document.querySelector('nav');
+const links = document.querySelectorAll('.name-trasition.p-4');
+
+menutoggle.addEventListener('click', () => {
+  menutoggle.classList.toggle('active');
+  navigation.classList.toggle('block');
+  navigation.classList.toggle('hidden');
+});
+
+navigation.addEventListener('click', () => {
+  menutoggle.classList.toggle('active');
+  navigation.classList.toggle('block');
+  navigation.classList.toggle('hidden');
+});

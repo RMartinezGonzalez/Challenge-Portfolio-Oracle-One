@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -27,7 +23,7 @@ body {
     @apply flex flex-wrap justify-center gap-y-8 gap-x-4
   }
   .grid-item-hobbie {
-    @apply w-full max-w-[144px] md:max-w-[250px] xl:max-w-[300px] grid justify-items-center text-center rounded transition-all hover:-translate-y-3 hover:shadow-xl pb-2 xl:h-[174px] items-center bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 text-clr-primary-400
+    @apply w-full max-w-[144px] md:max-w-[250px] xl:max-w-[300px] grid justify-items-center text-center rounded transition-all hover:-translate-y-3 hover:shadow-xl pb-2 px-2 xl:h-[174px] items-center bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 text-clr-primary-400
   }
   .name-transition {
     @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-neutral-900 after:scale-x-0 after:transition-all hover:after:scale-x-100 text-clr-neutral-900
@@ -41,16 +37,22 @@ body {
   .input-span {
     @apply absolute left-3 top-4 text-clr-neutral-700 font-normal text-base pointer-events-none transition-all peer-focus:text-clr-primary-500 peer-focus:text-xs peer-focus:translate-y-[-8px] peer-valid:text-clr-primary-500 peer-valid:text-xs peer-valid:translate-y-[-8px]
   }
-  .input-email:not(:placeholder-shown) ~ .input-span {
+  .input-invalid:not(:placeholder-shown) ~ .input-span {
     @apply text-clr-primary-500 text-xs translate-y-[-8px]
   }
-  .input-email:not(:placeholder-shown) ~ .input {
+  .input-invalid:not(:placeholder-shown) ~ .input {
     @apply border-b-clr-primary-500
-  }
-  .input-error {
-    @apply w-full
   }
   .input-error-message {
     @apply absolute top-[58px] xl:top-14 left-0 text-clr-error pointer-events-none font-medium text-sm xl:text-base
+  }
+  .menu-button {
+    @apply relative w-[30px] h-[30px] rounded flex items-center justify-center cursor-pointer overflow-hidden md:hidden z-30
+  }
+  .menu-icon {
+    @apply absolute w-6 h-1 bg-clr-neutral-900 rounded transition-all [&:nth-child(1)]:-translate-y-[8px] [&:nth-child(1)]:w-[12.5px] [&:nth-child(1)]:right-[5px] [&:nth-child(2)]:translate-y-[8px] [&:nth-child(2)]:w-[7.5px] [&:nth-child(2)]:right-[5px]
+  }
+  .menu-button.active > .menu-icon {
+    @apply [&:nth-child(3)]:translate-x-[60px] [&:nth-child(1)]:bg-clr-neutral-100 [&:nth-child(1)]:delay-100 [&:nth-child(1)]:w-[25px] [&:nth-child(1)]:translate-y-0 [&:nth-child(1)]:rotate-45 [&:nth-child(2)]:bg-clr-neutral-100 [&:nth-child(2)]:delay-100 [&:nth-child(2)]:w-[25px] [&:nth-child(2)]:translate-y-0 [&:nth-child(2)]:rotate-[315deg]
   }
 }
