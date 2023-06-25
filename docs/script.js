@@ -88,18 +88,23 @@ buttonSend.addEventListener('click', () => {
 
 })
 
+// Open the navigation
 const menutoggle = document.querySelector('.menu-button');
 const navigation = document.querySelector('nav');
 const links = document.querySelectorAll('.name-trasition.p-4');
+const body = document.body;
+
 
 menutoggle.addEventListener('click', () => {
   menutoggle.classList.toggle('active');
   navigation.classList.toggle('block');
   navigation.classList.toggle('hidden');
+  body.classList.toggle('overflow-hidden');
 });
 
 navigation.addEventListener('click', () => {
   menutoggle.classList.toggle('active');
   navigation.classList.toggle('block');
   navigation.classList.toggle('hidden');
+  body.classList.remove('overflow-hidden');
 });
