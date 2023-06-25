@@ -928,8 +928,8 @@ video {
   height: 1.75rem;
 }
 
-.h-\[100dvh\] {
-  height: 100dvh;
+.h-\[100svh\] {
+  height: 100svh;
 }
 
 .h-\[118px\] {
@@ -952,8 +952,8 @@ video {
   height: 100vh;
 }
 
-.h-\[100svh\] {
-  height: 100svh;
+.h-\[100dvh\] {
+  height: 100dvh;
 }
 
 .w-1\/2 {
@@ -1032,10 +1032,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
