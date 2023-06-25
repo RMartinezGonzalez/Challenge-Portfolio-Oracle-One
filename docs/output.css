@@ -928,8 +928,8 @@ video {
   height: 1.75rem;
 }
 
-.h-\[100svh\] {
-  height: 100svh;
+.h-\[100dvh\] {
+  height: 100dvh;
 }
 
 .h-\[118px\] {
@@ -952,8 +952,8 @@ video {
   height: 100vh;
 }
 
-.h-\[100dvh\] {
-  height: 100dvh;
+.h-full {
+  height: 100%;
 }
 
 .w-1\/2 {
