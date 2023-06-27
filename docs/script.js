@@ -67,7 +67,7 @@ form.addEventListener('change', () => {
     buttonSend.disabled = !form.checkValidity();
     if (!buttonSend.disabled) {
       buttonSend.classList.remove('grayscale');
-
+      spanButton.classList.add('hidden');
     } else {
       buttonSend.classList.add('grayscale');
     }
@@ -107,4 +107,13 @@ navigation.addEventListener('click', () => {
   navigation.classList.toggle('block');
   navigation.classList.toggle('hidden');
   body.classList.remove('overflow-hidden');
+});
+
+const spanButton = document.querySelector('span[type="hidden"]');
+const spanCheck = document.querySelector('span[type="check"]');
+
+spanCheck.addEventListener('click', () => {
+  if (buttonSend.disabled) {
+    spanButton.classList.remove('hidden');
+  }
 });

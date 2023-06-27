@@ -255,7 +255,7 @@
           <br>
           Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
         </p>
-        <form class="grid gap-8" action="https://formsubmit.co/ric.martinez.gonzalez@gmail.com" method="POST">
+        <form class="relative grid gap-8" action="https://formsubmit.co/ric.martinez.gonzalez@gmail.com" method="POST">
           <div class="relative">
             <input class="input peer input-invalid" type="text" name="name" placeholder="Nombre" required maxlength="50" data-type="name" pattern="^[\p{L}\p{M}\p{Zs}]*$" title="Ingrese solamente letras">
             <label class="input-span">Nombre</label>
@@ -277,12 +277,32 @@
             <label class="input-span z-[1]">Mensaje</label>
             <span class="top-[135px] xl:top-[133px] input-error-message"></span>
           </div>
-          <button class="button bg-clr-primary-500 text-clr-neutral-100 grayscale" type="submit" disabled>Enviar mensaje</button>
+          <button class="button bg-clr-primary-500 text-clr-neutral-100 grayscale" type="submit" disabled>
+            Enviar mensaje
+            <span class="absolute w-full h-full top-0 left-0" type="check"></span>
+          </button>
+          <span class="absolute bottom-[-23px] xl:bottom-[-25px] left-0 text-clr-error pointer-events-none font-medium text-sm xl:text-base hidden" type="hidden">Complete para enviar</span>
+          
 
           <input type="hidden" name="_next" value="https://rmartinezgonzalez.github.io/Challenge-Portfolio-Oracle-One/">
           <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
+
+      <dialog class="animate-jump-in animate-once animate-duration-1000 animate-delay-0 animate-ease-in-out bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 rounded-lg p-20 backdrop:bg-gradient-to-br backdrop:from-clr-neutral-500 backdrop:via-clr-neutral-500 backdrop:to-clr-neutral-400 text-clr-primary-400 backdrop:opacity-50" id="send-message">
+        <section class=" grid justify-items-center gap-20">
+    
+          <div>
+            <svg class="fill-clr-primary-400 w-24 h-24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:0;transform: msFilter"><path d="M20.56 3.34a1 1 0 0 0-1-.08l-17 8a1 1 0 0 0-.57.92 1 1 0 0 0 .6.9L8 15.45v6.72L13.84 18l4.76 2.08a.93.93 0 0 0 .4.09 1 1 0 0 0 .52-.15 1 1 0 0 0 .48-.79l1-15a1 1 0 0 0-.44-.89zM18.1 17.68l-5.27-2.31L16 9.17l-7.65 4.25-2.93-1.29 13.47-6.34z"></path></svg>
+          </div>
+          <div class="text-center">
+            <h3 class="title mb-2">Éxito!</h3>
+            <p class="font-bold text-base xl:text-xl">
+              Correo Enviado
+            </p>
+          </div>
+        </section>
+      </dialog>
     </section>
   </main>
 
@@ -290,19 +310,5 @@
     <small class="font-medium text-center">Desarrollado por <span class="name-transition cursor-default font-bold">Ricardo Martínez González</span><br>2023</small>
   </footer>
 
-  <dialog class="animate-jump-in animate-once animate-duration-1000 animate-delay-0 animate-ease-in-out bg-gradient-to-br from-clr-neutral-500 via-clr-neutral-500 to-clr-neutral-400 rounded-lg p-20 backdrop:bg-gradient-to-br backdrop:from-clr-neutral-500 backdrop:via-clr-neutral-500 backdrop:to-clr-neutral-400 text-clr-primary-400 backdrop:opacity-50" id="send-message">
-    <section class=" grid justify-items-center gap-20">
-
-      <div>
-        <svg class="fill-clr-primary-400 w-24 h-24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:0;transform: msFilter"><path d="M20.56 3.34a1 1 0 0 0-1-.08l-17 8a1 1 0 0 0-.57.92 1 1 0 0 0 .6.9L8 15.45v6.72L13.84 18l4.76 2.08a.93.93 0 0 0 .4.09 1 1 0 0 0 .52-.15 1 1 0 0 0 .48-.79l1-15a1 1 0 0 0-.44-.89zM18.1 17.68l-5.27-2.31L16 9.17l-7.65 4.25-2.93-1.29 13.47-6.34z"></path></svg>
-      </div>
-      <div class="text-center">
-        <h3 class="title mb-2">Éxito!</h3>
-        <p class="font-bold text-base xl:text-xl">
-          Correo Enviado
-        </p>
-      </div>
-    </section>
-  </dialog>
 </body>
 </html>
