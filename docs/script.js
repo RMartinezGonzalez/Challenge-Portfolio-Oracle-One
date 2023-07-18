@@ -2,50 +2,50 @@ const inputs = document.querySelectorAll('input, textarea');
 const buttonSend = document.querySelector('button[type="submit"]');
 const messages = document.querySelectorAll('.input-error-message');
 
-inputs.forEach(input => {
-  input.addEventListener('blur', input => {
+inputs.forEach((input) => {
+  input.addEventListener('blur', (input) => {
     validInput(input.target);
-  })
+  });
 });
 
 function validInput(input) {
-
   const inputType = input.dataset.type;
-  
 
   if (input.validity.valid) {
-    input.parentElement.querySelector('span').classList.remove('input-error-message');
+    input.parentElement
+      .querySelector('span')
+      .classList.remove('input-error-message');
     input.parentElement.querySelector('span').innerHTML = '';
-  }
-  else {
-    input.parentElement.querySelector('span').classList.add('input-error-message');
-    input.parentElement.querySelector('span').innerHTML = showErrorMessage(inputType, input);
+  } else {
+    input.parentElement
+      .querySelector('span')
+      .classList.add('input-error-message');
+    input.parentElement.querySelector('span').innerHTML = showErrorMessage(
+      inputType,
+      input
+    );
   }
 }
 
-const errorTypes = [
-  'valueMissing',
-  'typeMismatch',
-  'patternMismatch'
-]
+const errorTypes = ['valueMissing', 'typeMismatch', 'patternMismatch'];
 
 const errorMessages = {
-    name: {
-      valueMissing: 'Ingrese su nombre',
-      patternMismatch: 'Ingrese solamente letras'
-    },
-    email: {
-      valueMissing: 'Ingrese su email',
-      typeMismatch: 'El correo no es válido',
-      patternMismatch: 'Ejemplo: nombre@mail.com'
-    },
-    subject: {
-      valueMissing: 'Ingrese su asunto',
-    },
-    message: {
-      valueMissing: 'Ingrese su mensaje',
-    }
-}
+  name: {
+    valueMissing: 'Enter your name',
+    patternMismatch: 'Enter only letters',
+  },
+  email: {
+    valueMissing: 'Enter your email',
+    typeMismatch: 'Invalid email',
+    patternMismatch: 'Example: name@mail.com',
+  },
+  subject: {
+    valueMissing: 'Enter your subject',
+  },
+  message: {
+    valueMissing: 'Enter your message',
+  },
+};
 
 function showErrorMessage(inputType, input) {
   let message = '';
@@ -59,20 +59,18 @@ function showErrorMessage(inputType, input) {
   });
 
   return message;
-  
 }
 
 const form = document.querySelector('form');
 form.addEventListener('change', () => {
-    buttonSend.disabled = !form.checkValidity();
-    if (!buttonSend.disabled) {
-      buttonSend.classList.remove('grayscale');
-      spanButton.classList.add('hidden');
-    } else {
-      buttonSend.classList.add('grayscale');
-    }
+  buttonSend.disabled = !form.checkValidity();
+  if (!buttonSend.disabled) {
+    buttonSend.classList.remove('grayscale');
+    spanButton.classList.add('hidden');
+  } else {
+    buttonSend.classList.add('grayscale');
+  }
 });
-
 
 buttonSend.addEventListener('click', () => {
   // event.preventDefault();
@@ -84,16 +82,14 @@ buttonSend.addEventListener('click', () => {
   setTimeout(() => {
     sendMessage.close();
     form.reset();
-  }, 2000); 
-
-})
+  }, 2000);
+});
 
 // Open the navigation
 const menutoggle = document.querySelector('.menu-button');
 const navigation = document.querySelector('nav');
 const links = document.querySelectorAll('.name-trasition.p-4');
 const body = document.body;
-
 
 menutoggle.addEventListener('click', () => {
   menutoggle.classList.toggle('active');
